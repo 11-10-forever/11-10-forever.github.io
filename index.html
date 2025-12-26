@@ -17,7 +17,7 @@
             <h1>Nuestra Historia</h1>
             <p class="subtitle">Desde el 11 de octubre de 2025</p>
         </header>
-
+<hr>
         <section class="counter-section" id="counter-section">
             <h2 class="counter-title">Tiempo Juntos</h2>
             <div class="counter-grid">
@@ -47,16 +47,51 @@
                 </div>
             </div>
         </section>
-
-        <section class="message-section" id="message-section">
+                <section class="message-section" id="message-section">
             <p class="message-text" id="dynamic-message"></p>
         </section>
-
-        <footer>
+<div class="item">
+<h1>Cartita Diaria</h1>
+<br>
+     <p class="subtitle">Escríbeme algo lindo cada día. Solo yo, tu novio, lo leeré con el corazón.</p>
+     <div class="love-letter-container">
+        <div class="love-envelope">
+            <div class="love-envelope-front">
+                <div class="love-heart-decoration">
+                    <div class="love-heart" style="top: 30px; left: 40px;"></div>
+                    <div class="love-heart" style="top: 60px; right: 50px;"></div>
+                    <div class="love-heart" style="bottom: 40px; left: 70px;"></div>
+                    <div class="love-heart" style="bottom: 50px; right: 60px;"></div>
+                </div>
+                <div class="love-envelope-message">
+                    <p>Toca para abrir</p>
+                </div>
+            </div>
+            <div class="love-envelope-flap"></div>
+            <div class="love-letter-content">
+                <h2 class="love-letter-header">Tu cartita</h2>
+                <textarea class="love-letter-message" placeholder="Escribe aquí tu mensaje..."></textarea>
+                <div class="love-letter-footer">
+                    <button class="love-send-btn">Enviar con amor</button>
+                </div>
+            </div>
+        </div>
+        <div class="love-lock-message">
+            <p>Ya has enviado tu carta de amor hoy. Podrás escribir una nueva mañana. ❤️</p>
+        </div>
+        <div class="love-success-animation"></div>
+        <div class="love-hidden-config" id="loveAppSettings">
+            <div class="love-app-internal-config" id="loveMsgServiceConfig"></div>
+        </div>
+        </div>
+        </div>
+        <hr>
+           <footer>
             <p>Un amor eterno que crece con cada segundo ❤</p>
         </footer>
-    </div>
+        </div>
     <script src="/resources/js/script.js"></script>
+    <script src="/resources/js/script-letter.js"></script>
     <script src="/resources/js/utils.js"></script>
 </body>
 </html>
