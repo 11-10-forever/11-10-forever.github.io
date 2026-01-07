@@ -1,42 +1,51 @@
-# ⚠️ Aviso Legal, Derechos de Autor y Uso del Código
+# 11-10-forever
 
-Este repositorio y todo su contenido son propiedad intelectual exclusiva de su autor.
+## Aviso Legal y Derechos de Autor
 
-Todo el material incluido en este proyecto, sin excepción, se encuentra protegido por las leyes nacionales e internacionales de derechos de autor, incluyendo pero no limitado a:
+El presente repositorio corresponde al proyecto **11-10-forever** y constituye propiedad intelectual exclusiva de su autor y titular legal.
 
-- Código fuente (HTML, CSS, JavaScript y cualquier otro lenguaje utilizado)
-- Estructura del proyecto
-- Diseño visual, estilos y maquetación
-- Funcionalidades, lógica y comportamiento del sistema
-- Recursos gráficos, textos y demás archivos
+Todo el contenido alojado en este repositorio se encuentra protegido por las leyes nacionales e internacionales de derechos de autor y propiedad intelectual.
 
-🚫 **Restricciones de uso**
+### Alcance de la protección
 
-Queda estrictamente prohibido:
-- Copiar el código fuente total o parcialmente
-- Modificar, adaptar o crear trabajos derivados
-- Redistribuir el proyecto o partes del mismo
-- Publicar el código en otros repositorios o plataformas
-- Utilizar este proyecto con fines comerciales o educativos
-- Usar cualquier fragmento del código como base para otros proyectos
+La protección legal se extiende, de manera enunciativa pero no limitativa, a:
 
-Todo lo anterior **sin la autorización previa, expresa y por escrito del autor**.
+- Código fuente (HTML, CSS, JavaScript y cualquier otro lenguaje o tecnología utilizada)
+- Arquitectura, estructura y organización del proyecto
+- Diseño visual, identidad gráfica y estilos
+- Lógica de funcionamiento, scripts y funcionalidades
+- Textos, recursos multimedia y demás archivos asociados
 
-📌 **Permisos**
+### Uso del contenido
 
-Este repositorio se publica únicamente con fines de:
-- Visualización
-- Demostración del proyecto
-- Referencia general del funcionamiento
+🚫 **Queda estrictamente prohibido**, sin autorización previa, expresa y por escrito del titular:
 
-La visualización del código **no concede ningún derecho de uso**.
+- Copiar total o parcialmente el código fuente
+- Modificar, adaptar o transformar el contenido
+- Redistribuir, publicar o compartir el proyecto o fragmentos del mismo
+- Utilizar el código como base para otros proyectos
+- Emplear el contenido con fines comerciales, académicos o personales
+- Alojar este proyecto o partes de él en otros repositorios, sitios web o plataformas
 
-⚖️ **Consecuencias legales**
+El acceso a este repositorio **no implica la cesión de derechos**, ni concede licencia alguna sobre el uso del contenido.
 
-Cualquier uso no autorizado del contenido de este repositorio será considerado una infracción a los derechos de autor y podrá dar lugar a sanciones, reclamaciones o acciones legales conforme a la legislación vigente.
+### Finalidad del repositorio
 
-📬 **Contacto**
+Este repositorio se publica exclusivamente con fines de:
 
-Si deseas solicitar permiso para usar parte del contenido de este proyecto, deberás contactar directamente con el autor y obtener autorización explícita antes de cualquier uso.
+- Visualización del proyecto
+- Presentación general
+- Referencia demostrativa
 
-© Todos los derechos reservados.
+Cualquier otro uso distinto a los anteriores está expresamente prohibido.
+
+### Responsabilidad legal
+
+El uso no autorizado de cualquier parte de este proyecto será considerado una infracción a los derechos de autor y podrá dar lugar a acciones legales conforme a la legislación vigente en materia de propiedad intelectual.
+
+### Contacto y autorizaciones
+
+Cualquier solicitud relacionada con el uso, licencia o autorización del contenido deberá ser gestionada directamente con el titular del proyecto **11-10-forever**, y deberá contar con aprobación expresa antes de su implementación.
+
+© 11-10-forever.  
+Todos los derechos reservados.
