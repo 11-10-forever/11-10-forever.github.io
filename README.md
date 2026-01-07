@@ -1,51 +1,70 @@
-# 11-10-forever
+# 11-10-forever®
 
-## Aviso Legal y Derechos de Autor
+## Aviso Legal, Propiedad Intelectual y Marca Registrada
 
-El presente repositorio corresponde al proyecto **11-10-forever** y constituye propiedad intelectual exclusiva de su autor y titular legal.
+Este repositorio corresponde al proyecto **11-10-forever®**, una **marca registrada**, iniciada en el año **2025** y vigente en **2026**, propiedad exclusiva de su titular legal.
 
-Todo el contenido alojado en este repositorio se encuentra protegido por las leyes nacionales e internacionales de derechos de autor y propiedad intelectual.
+El proyecto se encuentra publicado mediante **GitHub Pages** y su disponibilidad es **únicamente demostrativa**.
 
-### Alcance de la protección
+Todo el contenido de este repositorio está protegido por las leyes nacionales e internacionales de **derechos de autor**, **propiedad intelectual** y **protección de marcas registradas**.
 
-La protección legal se extiende, de manera enunciativa pero no limitativa, a:
+---
 
-- Código fuente (HTML, CSS, JavaScript y cualquier otro lenguaje o tecnología utilizada)
-- Arquitectura, estructura y organización del proyecto
-- Diseño visual, identidad gráfica y estilos
-- Lógica de funcionamiento, scripts y funcionalidades
-- Textos, recursos multimedia y demás archivos asociados
+## Finalidad del repositorio
 
-### Uso del contenido
+Este repositorio tiene como **único propósito**:
 
-🚫 **Queda estrictamente prohibido**, sin autorización previa, expresa y por escrito del titular:
+- Demostración visual del proyecto
+- Presentación pública del sitio web
+- Exhibición del diseño y funcionamiento general
+
+🚫 **Este repositorio NO es de código abierto**  
+🚫 **Este proyecto NO ofrece licencia de uso público**
+
+La visualización del código **no autoriza** su uso, copia o modificación.
+
+---
+
+## Alcance de la protección
+
+La protección legal cubre, sin limitarse a:
+
+- Código fuente (HTML, CSS, JavaScript y cualquier otra tecnología)
+- Estructura, arquitectura y organización del proyecto
+- Diseño visual, UI/UX e identidad gráfica
+- Nombre comercial, logotipo y elementos distintivos
+- Funcionalidades, scripts y lógica de negocio
+- Textos, recursos multimedia y documentación
+
+---
+
+## Restricciones de uso
+
+🚫 Queda **estrictamente prohibido**, sin autorización previa y por escrito del titular de **11-10-forever®**:
 
 - Copiar total o parcialmente el código fuente
-- Modificar, adaptar o transformar el contenido
-- Redistribuir, publicar o compartir el proyecto o fragmentos del mismo
-- Utilizar el código como base para otros proyectos
-- Emplear el contenido con fines comerciales, académicos o personales
-- Alojar este proyecto o partes de él en otros repositorios, sitios web o plataformas
+- Modificar, adaptar o reutilizar cualquier parte del proyecto
+- Crear proyectos derivados o similares
+- Redistribuir el contenido en otros repositorios o sitios web
+- Utilizar el código con fines personales, educativos o comerciales
+- Usar el nombre **11-10-forever®** o su identidad visual
 
-El acceso a este repositorio **no implica la cesión de derechos**, ni concede licencia alguna sobre el uso del contenido.
+El acceso a este repositorio **no concede licencia alguna**, ni implícita ni explícita.
 
-### Finalidad del repositorio
+---
 
-Este repositorio se publica exclusivamente con fines de:
+## Marca registrada
 
-- Visualización del proyecto
-- Presentación general
-- Referencia demostrativa
+**11-10-forever®** es una **marca registrada**.  
+Cualquier uso no autorizado del nombre, identidad visual o elementos asociados constituye una infracción legal.
 
-Cualquier otro uso distinto a los anteriores está expresamente prohibido.
+---
 
-### Responsabilidad legal
+## Responsabilidad legal
 
-El uso no autorizado de cualquier parte de este proyecto será considerado una infracción a los derechos de autor y podrá dar lugar a acciones legales conforme a la legislación vigente en materia de propiedad intelectual.
+El uso no autorizado de este proyecto podrá derivar en acciones legales conforme a la legislación vigente en materia de derechos de autor y marcas registradas.
 
-### Contacto y autorizaciones
+---
 
-Cualquier solicitud relacionada con el uso, licencia o autorización del contenido deberá ser gestionada directamente con el titular del proyecto **11-10-forever**, y deberá contar con aprobación expresa antes de su implementación.
-
-© 11-10-forever.  
+© 2025–2026 **11-10-forever®**  
 Todos los derechos reservados.
