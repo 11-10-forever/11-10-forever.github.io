@@ -6,8 +6,351 @@
     <title>Nuestra Historia</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/resources/css/style.css">
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            overflow: hidden;
+        }
+
+        /* Contenido de fondo simulado */
+        .background-content {
+            padding: 20px;
+            color: white;
+        }
+
+        .background-content h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .background-content p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        /* Modal overlay con blur profesional */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 20px;
+        }
+
+        /* Modal container - Modo Oscuro Profesional */
+        .modal-container {
+            background: linear-gradient(145deg, #1a1f2e 0%, #252b3b 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 32px 24px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            animation: scaleIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Efecto de brillo sutil en el borde superior */
+        .modal-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.5), transparent);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        /* Header del modal */
+        .modal-header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        /* Icono moderno sin rotación */
+        .icon-container {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 
+                0 8px 24px rgba(99, 102, 241, 0.25),
+                inset 0 1px 0 rgba(255, 255, 255, 0.15);
+            animation: float 3s ease-in-out infinite;
+            position: relative;
+        }
+
+        .icon-container::after {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            opacity: 0.3;
+            filter: blur(8px);
+            z-index: -1;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .icon-container svg {
+            width: 36px;
+            height: 36px;
+            fill: white;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+        }
+
+        .modal-title {
+            font-size: 1.75em;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+            animation: slideDown 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;
+        }
+
+        .modal-subtitle {
+            font-size: 0.8em;
+            color: #ef4444;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            animation: slideDown 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+            display: inline-block;
+            padding: 6px 12px;
+            background: rgba(239, 68, 68, 0.1);
+            border-radius: 6px;
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+
+        /* Contenido del modal */
+        .modal-body {
+            margin: 24px 0;
+            animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+        }
+
+        .message-text {
+            font-size: 0.95em;
+            line-height: 1.7;
+            color: #cbd5e1;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #fbbf24;
+            font-weight: 600;
+            text-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+        }
+
+        /* Línea divisoria elegante */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            margin: 24px 0;
+            animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
+        }
+
+        /* Info box moderna */
+        .info-box {
+            background: rgba(99, 102, 241, 0.08);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-left: 3px solid #6366f1;
+            padding: 16px;
+            border-radius: 10px;
+            animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.5s both;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+            animation: slide 3s ease-in-out infinite;
+        }
+
+        .info-box-title {
+            font-size: 0.85em;
+            color: #a5b4fc;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info-box li {
+            font-size: 0.85em;
+            color: #cbd5e1;
+            line-height: 1.6;
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 6px;
+        }
+
+        .info-box li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #6366f1;
+            font-weight: bold;
+        }
+
+        .footer-text {
+            margin-top: 24px;
+            font-size: 0.85em;
+            color: #94a3b8;
+            text-align: center;
+            animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
+        }
+
+        /* Animaciones elegantes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-15px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(15px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        @keyframes glow {
+            0% {
+                opacity: 0.2;
+            }
+            100% {
+                opacity: 0.4;
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes slide {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 400px) {
+            .modal-container {
+                padding: 28px 20px;
+            }
+
+            .modal-title {
+                font-size: 1.5em;
+            }
+
+            .icon-container {
+                width: 64px;
+                height: 64px;
+            }
+
+            .icon-container svg {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        /* Prevenir interacción con el fondo */
+        .modal-overlay * {
+            pointer-events: auto;
+        }
+
+        body.modal-open {
+            overflow: hidden;
+        }
+    </style>
 </head>
-<body>
+<body class="modal-open">
     <div id="hearts-container"></div>
 
     <div id="snow-container"></div>
@@ -90,8 +433,74 @@
             <p>Un amor eterno que crece con cada segundo ❤</p>
         </footer>
         </div>
+     <div class="background-content">
+        <h1>Mi Sitio Web</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+
+    <!-- Modal de mantenimiento -->
+    <div class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="icon-container">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                </div>
+                <h2 class="modal-title">En Mantenimiento</h2>
+                <div class="modal-subtitle">⚠️ Servicio Suspendido</div>
+            </div>
+
+            <div class="modal-body">
+                <p class="message-text">
+                    Debido a la <span class="highlight">falta de visitas y popularidad</span>, este servicio probablemente será eliminado de forma permanente.
+                </p>
+                
+                <div class="divider"></div>
+
+                <div class="info-box">
+                    <div class="info-box-title">
+                        <span>📋</span>
+                        <span>Condiciones de Restablecimiento</span>
+                    </div>
+                    <ul>
+                        <li>Recuperación de tráfico y popularidad</li>
+                        <li>Decisión administrativa discrecional</li>
+                    </ul>
+                </div>
+
+                <p class="footer-text">
+                    Agradecemos su comprensión
+                </p>
+            </div>
+        </div>
+    </div>
     <script src="/resources/js/script.js"></script>
     <script src="/resources/js/script-letter.js"></script>
     <script src="/resources/js/utils.js"></script>
+       <script>
+        // Prevenir toda interacción con el fondo
+        document.querySelector('.modal-overlay').addEventListener('click', function(e) {
+            // No hacer nada al hacer clic (bloquea la interacción)
+            e.stopPropagation();
+        });
+
+        // Prevenir scroll
+        document.body.style.overflow = 'hidden';
+        document.body.style.position = 'fixed';
+        document.body.style.width = '100%';
+
+        // Prevenir interacción con teclas
+        document.addEventListener('keydown', function(e) {
+            e.preventDefault();
+        });
+
+        // Prevenir clic derecho
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+       </script>
 </body>
 </html>
