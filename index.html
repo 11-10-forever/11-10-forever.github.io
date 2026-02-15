@@ -6,6 +6,7 @@
     <title>Nuestra Historia</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/cyron.css">
 </head>
 <body>
     <div id="hearts-container"></div>
@@ -89,9 +90,74 @@
            <footer>
             <p>Un amor eterno que crece con cada segundo ❤</p>
         </footer>
+              <div class="cyron__hearts" id="cyron__hearts"></div>
+
+    <div id="cyron__container">
+        <div id="cyron__pet">
+            <img src="https://orvex-web.github.io/resources/multimedia/image/cyron-orvex.gif" alt="Cyron" id="cyron__pet-img">
         </div>
+        
+        <div id="cyron__bubble"></div>
+
+        <div id="cyron__chatbot">
+            <div id="cyron__chat-header">
+                <div class="cyron__header-content">
+                    <img src="https://orvex-web.github.io/resources/multimedia/image/cyron-orvex.gif" alt="Cyron" class="cyron__header-avatar">
+                    <div class="cyron__header-info">
+                        <h2>Cyron</h2>
+                        <div class="cyron__header-status">
+                            <span class="cyron__status-dot"></span>
+                            <span>En línea</span>
+                        </div>
+                    </div>
+                </div>
+                <button id="cyron__close-btn">×</button>
+            </div>
+            <div id="cyron__messages">
+                <div class="cyron__typing">
+                    <div class="cyron__typing-dot"></div>
+                    <div class="cyron__typing-dot"></div>
+                    <div class="cyron__typing-dot"></div>
+                </div>
+            </div>
+            <div id="cyron__input-area">
+                <input type="text" id="cyron__input" placeholder="Escribe un mensaje..." disabled autocomplete="off">
+                <button id="cyron__send-btn"><span>Enviar</span></button>
+            </div>
+        </div>
+
+        <div id="cyron__welcome">
+            <img src="https://orvex-web.github.io/resources/multimedia/image/cyron-orvex.gif" alt="Cyron" id="cyron__welcome-gif">
+            <div id="cyron__welcome-message">
+                <div id="cyron__welcome-text"></div>
+                <form id="cyron__welcome-form">
+                    <div class="cyron__form-group">
+                        <label for="cyron__user-name">💝 ¿Cómo te llamas?</label>
+                        <input type="text" id="cyron__user-name" required placeholder="Tu nombre...">
+                    </div>
+                    <div class="cyron__form-group">
+                        <label for="cyron__boyfriend-name">👩🏻‍❤️‍👨🏻 ¿Cómo se llama tu novio?</label>
+                        <input type="text" id="cyron__boyfriend-name" required placeholder="El nombre de tu novio...">
+                    </div>
+                    <div class="cyron__form-group">
+                        <label>💖 ¿Cuánto lo amas?</label>
+                        <input type="range" min="0" max="100" value="0" class="cyron__love-slider" id="cyron__love-level">
+                        <div class="cyron__love-value">💗 <span id="cyron__love-display">0</span>%</div>
+                    </div>
+                    <div class="cyron__form-group">
+                        <label for="cyron__relationship-desc">💌 Algo especial sobre su relación</label>
+                        <textarea id="cyron__relationship-desc" placeholder="Cuéntame algo hermoso... (opcional)"></textarea>
+                    </div>
+                    <p class="cyron__warning-text">⚠️ Esta información no se podrá modificar después</p>
+                </form>
+                <button id="cyron__welcome-btn"><span>Continuar 💕</span></button>
+            </div>
+        </div>
+    </div>
+    </div>
     <script src="/resources/js/script.js"></script>
     <script src="/resources/js/script-letter.js"></script>
+    <script src="/resources/js/cyron.js"></script>
     <script src="/resources/js/utils.js"></script>
 </body>
 </html>
